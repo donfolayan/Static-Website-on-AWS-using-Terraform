@@ -122,32 +122,35 @@ Follow these steps to deploy your static website:
 3. **Configure Amazon CLI:**
    Configure your access keys on Amazon CLI to secure connection
 
-4. **Initialize Terraform:**
+4. **Add your own website files**
+   The delete the contents of Config/Website and add your own website files
+
+5. **Initialize Terraform:**
 
    ```
    terraform init
    ```
 
-5. **Plan the deployment:**
+6. **Plan the deployment:**
 
    ```
    terraform plan
    ```
 
-6. **Apply the deployment:**
+7. **Apply the deployment:**
 
    ```
    terraform apply -auto-approve
    ```
 
-7. **Expect an error:**
+8. **Expect an error:**
 
    - An error will be thrown during the first launch but this is within expectation,
      The error is due to the Zone53 DNS Nameservers not being configured the Registrar.
      Simply open your Route53 and copy the Nameservers and copy them to your Domain name provider
      then run `terraform apply -auto-approve`
 
-8. **Clean Up**
+9. **Clean Up**
 
    - To destroy all the resources created by this project, run:
 
