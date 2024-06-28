@@ -70,6 +70,8 @@ Create an AWS infrastructure to host a static website using Terraform. The infra
 
 4. **S3 Bucket Configuration**
 
+![active s3 bucket](./images/s3-bucket.png)
+
    - Created an S3 bucket as a module under a folder named `modules` and named it `s3_bucket.tf`.
    - Inside `s3_bucket.tf`, created an S3 bucket to host the website and defined default documents.
    - Created a bucket policy to make it publicly available.
@@ -78,6 +80,8 @@ Create an AWS infrastructure to host a static website using Terraform. The infra
    - Provisioned an AWS S3 object resource that provisions source files into an S3 bucket.
 
 5. **CloudFront Configuration**
+
+![active cloudfront](./images/cloudfront.png)
 
    - Created the `cloudfront.tf` file and provisioned CloudFront.
    - Configured the origin to use the S3 bucket.
@@ -89,12 +93,17 @@ Create an AWS infrastructure to host a static website using Terraform. The infra
 
 6. **Route 53 Configuration**
 
+![active route53](./images/route53.png)
+
    - Created a Route 53 hosted zone.
    - Created Route 53 records for domain validation.
    - Created a Route 53 A record with an alias for CloudFront.
 
 7. **Website Module**
+
    - Created a module named "website" to manage the website infrastructure.
+
+![deployed website](./images/deployed-website.png)
 
 ## Usage
 
