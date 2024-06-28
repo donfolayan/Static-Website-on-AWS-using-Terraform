@@ -117,13 +117,13 @@ Follow these steps to deploy your static website:
    ```
 
 2. **Configure Terraform:**
-   Update the terraform.tfvars file with your domain name, and other configurations.
+   - Update the terraform.tfvars file with your domain name, and other configurations.
 
 3. **Configure Amazon CLI:**
-   Configure your access keys on Amazon CLI to secure connection
+   - Configure your access keys on Amazon CLI to secure connection
 
 4. **Add your own website files**
-   The delete the contents of Config/Website and add your own website files
+   - The delete the contents of Config/Website and add your own website files
 
 5. **Initialize Terraform:**
 
